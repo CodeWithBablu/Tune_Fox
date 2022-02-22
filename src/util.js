@@ -138,6 +138,15 @@ function chillhop()
             audio: "https://mp3.chillhop.com/serve.php/?mp3=8266",
             color: ["#C7B9C5","#AE4B49"],
             active: false
+        },
+        {
+            id: uuidv4(),
+            name: "Waybackwhen",
+            cover: "https://chillhop.com/wp-content/uploads/2021/11/4c9682ee612a3b8ef51de286c49b5489408e9257-1024x1024.jpg",
+            artist: " Philanthrope, Parkbench Epiphany ",
+            audio: "https://pwdown.com/113563/Srivalli - Pushpa.mp3",
+            color: ["#718697","#F0AA96"],
+            active: false
         }
     ];
 }
@@ -150,3 +159,7 @@ export default chillhop;
             // audio: "",
             // color: ["",""],
             // active: false
+
+
+            //https://pwdown.com/113563/Srivalli - Pushpa.mp3
+            //https://mp3.chillhop.com/serve.php/?mp3=27502

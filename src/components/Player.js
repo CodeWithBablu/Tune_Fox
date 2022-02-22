@@ -1,12 +1,12 @@
-import react,{ useRef, useState } from "react";
+import react,{ useState } from "react";
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";  
 import { faPlay, faPause, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
-function Player({currentSong,isPlaying,setIsPlaying}) {
+function Player({audioRef, currentSong, isPlaying, setIsPlaying}) {
 
     //use Ref
-    const audioRef = useRef(null);
+    
 
     //use state
     const [songInfo,setSongInfo]= useState({currentTime:0,duration:0});

@@ -1,7 +1,7 @@
 import LibrarySong from "./LibrarySong";
 
 
-function Library({ songs, setCurSong, setIsPlaying }){
+function Library({ audioRef, songs, setCurSong, isPlaying, setSongs }){
 
     return (
 
@@ -9,7 +9,14 @@ function Library({ songs, setCurSong, setIsPlaying }){
             <h2>Library</h2>
             <div className="library-songs">
                 { songs.map( (song)=> (
-                    <LibrarySong song={song} setCurSong={ setCurSong } setIsPlaying={setIsPlaying} />
+                    <LibrarySong 
+                        audioRef={audioRef}
+                        songs={songs} 
+                        song={song} 
+                        setCurSong={setCurSong} 
+                        isPlaying={isPlaying}
+                        setSongs={setSongs}
+                        key={song.id} />
                  ) ) }
             </div>
         </div>
