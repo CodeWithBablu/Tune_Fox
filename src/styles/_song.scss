@@ -1,9 +1,16 @@
 .song-container {
-  min-height: 70vh;
+  padding-top: 5rem;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  // background-color: #74ebd5;
+  // background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+
+  ////
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease;
 
   img {
     width: 20%;
@@ -16,4 +23,8 @@
   h3 {
     font-size: 1.2rem;
   }
+}
+
+.toggle-song {
+  margin-left: 20rem;
 }

@@ -1,4 +1,7 @@
 .library {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  ////
   position: fixed;
   top: 0;
   left: 0;
@@ -6,7 +9,10 @@
   height: 100%;
   box-shadow: 2px 2px 50px gray;
   overflow: scroll;
-  background: rgb(255, 255, 255);
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+  // background: rgb(255, 255, 255);
 
   h2 {
     padding: 2rem 2rem;
@@ -65,4 +71,9 @@
 
 .selected {
   background: rgb(255, 170, 181);
+}
+
+.toggle-on {
+  transform: translateX(0%);
+  opacity: 1;
 }
