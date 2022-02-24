@@ -3,20 +3,12 @@
 function LibrarySong({ audioRef, songs, song, setCurSong, isPlaying, setSongs }) {
   
 
-  const songSelectHandler= ()=> {
+  const songSelectHandler= async ()=> {
 
-    setCurSong(song);
+    await setCurSong(song);
 
     if(isPlaying)
-    {
-      const playPromise= audioRef.current.play();
-      if(playPromise!==undefined)
-      {
-        playPromise.then((audio)=>{
-          audioRef.current.play()
-        })
-      }
-    }
+        audioRef.current.play();
 
     //To mAKE song that click active Highlighted
 
