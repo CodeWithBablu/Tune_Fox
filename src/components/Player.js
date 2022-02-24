@@ -1,4 +1,4 @@
-import react,{ useState } from "react";
+import react,{ useState, useEffect } from "react";
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";  
 import { faPlay, faPause, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
@@ -14,7 +14,28 @@ function Player({
         return ( Math.floor(time/60)+ ":" +  ( "0"+Math.floor(time%60)).slice(-2) );
     }
 
+    //To change Active Higlight 
+    useEffect(()=> {
+
+      const newSongs= songs.map((song)=>{
+
+        if(song.id===currentSong.id)
+        {
+          return {...song,active:true};
+        }
+        else
+        {
+          return {...song,active:false};
+        }
+
+      });
+
+      setSongs(newSongs);
+
+    },[currentSong]);
+
     //Event Handler
+
     const playSongHandler= ()=>{
       if(isPlaying)
         {
@@ -40,6 +61,8 @@ function Player({
       {
         setCurSong( songs[ currentIndex!==0? (currentIndex-1):(songs.length-1) ] );
       }
+
+
 
     };
 
