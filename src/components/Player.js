@@ -87,7 +87,6 @@ function Player({
     }
 
     const dragSliderHandler= (e)=> {
-        console.log(e.target.value)
         const sliderPercentage=e.target.value;
         audioRef.current.volume =sliderPercentage/100;
         setSliderInfo(sliderPercentage);
