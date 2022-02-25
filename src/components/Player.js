@@ -1,13 +1,13 @@
 import react,{ useState, useEffect } from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";  
-import { faPlay, faPause, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faPlay, faVolumeDown, faPause, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 function Player({ 
   libraryStatus, audioRef, currentSong, isPlaying, setIsPlaying, songs, setCurSong, setSongs}) {
 
     //use state
     const [songInfo,setSongInfo]= useState({currentTime:0,duration:0});
-
+    const [sliderInfo,setSliderInfo] =useState(100);
     //function to format time
     const getTime= (time)=>{
         return ( Math.floor(time/60)+ ":" +  ( "0"+Math.floor(time%60)).slice(-2) );
@@ -86,6 +86,13 @@ function Player({
         
     }
 
+    const dragSliderHandler= (e)=> {
+        console.log(e.target.value)
+        const sliderPercentage=e.target.value;
+        audioRef.current.volume =sliderPercentage/100;
+        setSliderInfo(sliderPercentage);
+    }
+
     const songEndHandler= async()=> {
       const currentIndex=songs.findIndex((song)=> song.id===currentSong.id );
       await setCurSong( songs[ (currentIndex+1)%(songs.length) ] );
@@ -98,9 +105,15 @@ function Player({
       transform:`translateX(${songInfo.currentPercentage}%)`
     }
 
+    const sliderAnimate ={
+      transform:`translateX(${ sliderInfo }%)`
+    }
+
     return (
-      <div className={`player ${ libraryStatus?`toggle-player`:"" }`} >
+      <div className={`player`} >
+        
         <div className="time-control">
+        
             <p>{getTime(songInfo.currentTime)}</p>
               <div 
                 className="track" 
@@ -116,7 +129,25 @@ function Player({
               </div>
             <p>{ songInfo.duration?getTime(songInfo.duration):"0.00"}</p>
         </div>
+    
         <div className="play-control">
+          <div className="vol-control">
+            <FontAwesomeIcon 
+                  className="vol-icon" 
+                  size="2x" 
+                  icon={faVolumeDown} />
+                <div className="slider-track">
+                    <input 
+                      className="audioSlider"
+                      onChange={ dragSliderHandler }
+                      min={0}
+                      max={100} 
+                      type="range" />
+                    <div style={sliderAnimate} className="slider-animate"></div>
+                </div>
+          </div>
+          
+
             <FontAwesomeIcon 
               className="skip-back" 
               onClick={ ()=> skipTrackHandler('skip-back') }

@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 }
 
 .time-control {
@@ -36,6 +36,61 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+
+  .vol-control {
+    display: flex;
+    margin-top: -15rem;
+    width: 30%;
+    transition: all 1s ease;
+
+    .vol-icon {
+      padding: 0rem 1rem;
+    }
+
+    .slider-track {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      position: relative;
+      height: 2rem;
+      overflow: hidden;
+
+      .audioSlider {
+        width: 2rem;
+        height: 1rem;
+        -webkit-appearance: none;
+        border-radius: 2rem;
+        background-color: #e0292d;
+        background-image: linear-gradient(90deg, #e0292d 0%, #ff00cc 100%);
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.8s ease;
+
+        &:hover {
+          width: 100%;
+        }
+
+        &:hover + .slider-animate {
+          width: 100%;
+        }
+      }
+
+      .slider-animate {
+        position: absolute;
+        width: 0%;
+        height: 1rem;
+        top: 26.5%;
+        left: 0%;
+        border-radius: 1rem 1rem;
+        transform: translateX(0%);
+        background-color: #8ec5fc;
+        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+        cursor: pointer;
+        transition: all 0.8s ease;
+        pointer-events: none;
+      }
+    }
+  }
 
   .skip-back {
     margin-top: -15rem;
@@ -93,4 +148,37 @@ input[type="range"]::-moz-range-thumb {
   width: 100%;
   height: 100%;
   pointer-events: none;
+}
+
+@media screen and (max-width: 1268px) {
+  .time-control {
+    width: 80%;
+  }
+
+  .play-control {
+    width: 60%;
+
+    .vol-control {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .player {
+    min-height: 40vh;
+
+    .time-control {
+      width: 95%;
+    }
+
+    .play-control {
+      width: 80%;
+
+      .vol-control {
+        width: 40%;
+        display: none;
+      }
+    }
+  }
 }

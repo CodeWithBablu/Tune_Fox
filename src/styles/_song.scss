@@ -28,3 +28,21 @@
 .toggle-song {
   margin-left: 20rem;
 }
+
+@media screen and (max-width: 1268px) {
+  .song-container {
+    min-height: 50vh;
+
+    img {
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .song-container {
+    img {
+      width: 60%;
+    }
+  }
+}

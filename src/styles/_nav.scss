@@ -21,3 +21,13 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    font-size: 0.5rem;
+    button {
+      z-index: 10;
+      font-size: 0.5rem;
+    }
+  }
+}

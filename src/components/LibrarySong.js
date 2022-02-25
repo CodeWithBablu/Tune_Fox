@@ -12,23 +12,23 @@ function LibrarySong({ audioRef, songs, song, setCurSong, isPlaying, setSongs })
 
     //To mAKE song that click active Highlighted
 
-    const newSongs= ()=>{
+    // const newSongs= ()=>{
 
-       return songs.map((singleSong)=>{
+    //    return songs.map((singleSong)=>{
 
-        if(singleSong.id===song.id)
-        {
-          return {...singleSong,active:true}
-        }
-        else
-        {
-          return {...singleSong,active:false}
-        }
+    //     if(singleSong.id===song.id)
+    //     {
+    //       return {...singleSong,active:true}
+    //     }
+    //     else
+    //     {
+    //       return {...singleSong,active:false}
+    //     }
 
-      });
-    }
+    //   });
+    // }
 
-    setSongs(newSongs());
+    // setSongs(newSongs());
 
   }
   

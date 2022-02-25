@@ -24,6 +24,7 @@
   align-items: center;
   padding: 1rem 2rem 1rem 2rem;
   cursor: pointer;
+  transition: background 0.5 ease;
 
   &:hover {
     background: rgb(219, 255, 255);
@@ -37,7 +38,7 @@
     }
 
     h4 {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -76,4 +77,10 @@
 .toggle-on {
   transform: translateX(0%);
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
 }
