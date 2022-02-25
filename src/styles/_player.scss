@@ -44,6 +44,14 @@
     width: 30%;
     transition: all 1s ease;
 
+    &:hover > .slider-track > .audioSlider {
+      width: 100%;
+    }
+
+    &:hover > .slider-track > .slider-animate {
+      width: 100%;
+    }
+
     .vol-icon {
       padding: 0rem 1rem;
     }
@@ -55,10 +63,11 @@
       border-radius: 2rem;
       position: relative;
       height: 2rem;
+      cursor: pointer;
       overflow: hidden;
 
       .audioSlider {
-        width: 100%;
+        width: 0%;
         height: 60%;
         -webkit-appearance: none;
         border-radius: 2rem;
@@ -67,20 +76,12 @@
         cursor: pointer;
         overflow: hidden;
         transition: all 0.8s ease;
-
-        // &:hover {
-        //   width: 100%;
-        // }
-
-        // &:hover + .slider-animate {
-        //   width: 100%;
-        // }
       }
 
       .slider-animate {
         position: absolute;
         height: 100%;
-        width: 100%;
+        width: 0%;
         top: 0%;
         left: 0%;
         border-radius: 2rem;
