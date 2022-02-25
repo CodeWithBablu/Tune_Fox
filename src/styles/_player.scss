@@ -51,12 +51,13 @@
       display: flex;
       width: 100%;
       align-items: center;
+      border-radius: 2rem;
       position: relative;
       height: 2rem;
       overflow: hidden;
 
       .audioSlider {
-        width: 2rem;
+        width: 1.5rem;
         height: 1rem;
         -webkit-appearance: none;
         border-radius: 2rem;
@@ -81,7 +82,7 @@
         height: 1rem;
         top: 26.5%;
         left: 0%;
-        border-radius: 1rem 1rem;
+        border-radius: 2rem;
         transform: translateX(0%);
         background-color: #8ec5fc;
         background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
@@ -170,6 +171,16 @@ input[type="range"]::-moz-range-thumb {
 
     .time-control {
       width: 95%;
+      margin-top: 2rem;
+
+      input {
+        background: transparent;
+      }
+
+      p {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+      }
     }
 
     .play-control {
@@ -179,6 +190,25 @@ input[type="range"]::-moz-range-thumb {
         width: 40%;
         display: none;
       }
+
+      .skip-back {
+        margin-top: -16rem;
+        padding: 1rem 2rem;
+      }
+
+      .skip-forward {
+        margin-top: -16rem;
+        padding: 1rem 2rem;
+      }
+
+      .play {
+        margin-top: -16rem;
+        padding: 1rem 2rem;
+      }
+    }
+
+    .track {
+      height: 0.6rem;
     }
   }
 }
