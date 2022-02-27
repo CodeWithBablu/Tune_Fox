@@ -5,12 +5,12 @@
   align-items: center;
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: white;
   }
 
   button {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     background: transparent;
     cursor: pointer;
     color: white;
@@ -30,11 +30,15 @@
 
 @media screen and (max-width: 768px) {
   .nav-bar {
-    font-size: 0.5rem;
+    h1 {
+      font-size: 1.3rem;
+      color: white;
+    }
+
     button {
       z-index: 10;
-      margin-top: 1rem;
-      font-size: 1rem;
+      margin-top: 0.8rem;
+      font-size: 0.8rem;
     }
   }
 }
