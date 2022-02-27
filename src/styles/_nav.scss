@@ -4,16 +4,22 @@
   justify-content: space-around;
   align-items: center;
 
+  h1 {
+    font-size: 2rem;
+    color: white;
+  }
+
   button {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     background: transparent;
     cursor: pointer;
-    border: 2px solid rgb(65, 65, 65);
+    color: white;
+    border: 3px solid rgb(229, 255, 0);
     padding: 0.5rem;
     transition: all 0.7s ease;
     &:hover {
-      background: rgb(65, 65, 65);
-      color: white;
+      background: #d0ff00;
+      color: black;
     }
 
     span {
@@ -27,7 +33,8 @@
     font-size: 0.5rem;
     button {
       z-index: 10;
-      font-size: 0.5rem;
+      margin-top: 1rem;
+      font-size: 1rem;
     }
   }
 }
