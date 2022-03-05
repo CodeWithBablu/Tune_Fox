@@ -1,12 +1,12 @@
 .library {
-  background: #1b1b1b;
+  background: #3a3737;
   ////
   position: fixed;
   top: 0;
   left: 0;
   width: 25rem;
   height: 100%;
-  box-shadow: 2px 2px 50px#075a8a;
+  box-shadow: 2px 2px 50px#ff0062;
   overflow: scroll;
   transform: translateX(-100%);
   transition: all 0.5s ease;
@@ -39,6 +39,7 @@
 
     h4 {
       font-size: 1rem;
+      margin-left: 0.5rem;
     }
   }
 
