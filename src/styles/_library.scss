@@ -5,8 +5,8 @@
   top: 0;
   left: 0;
   width: 25rem;
-  height: 100%;
-  box-shadow: 2px 2px 50px#ff0062;
+  height: 102%;
+  box-shadow: 0px 0px 30px#5900ff;
   overflow: scroll;
   transform: translateX(-100%);
   transition: all 0.5s ease;
@@ -52,7 +52,7 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+  scrollbar-color: rgb(0, 255, 179) transparent;
 }
 
 *::-webkit-scrollbar {
@@ -60,11 +60,11 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: transparent;
+  background: #3a3737;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(155, 155, 155, 0.5);
+  background-color: rgb(0, 255, 179);
   border-radius: 20px;
   border: transparent;
 }
