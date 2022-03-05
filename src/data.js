@@ -169,7 +169,7 @@ function chillhop()
         {
             id: uuidv4(),
             name: "Baht Oyunu (Original Soundtrack)",
-            cover: "https://chillhop.com/wp-content/uploads/2021/11/4c9682ee612a3b8ef51de286c49b5489408e9257-1024x1024.jpg",
+            cover: "https://drive.google.com/uc?export=view&id=1f4k1N0bt6egJo8phpoc-GEP_dFkE-h5H",
             artist: " Aslı Demirer ",
             audio: "https://sgdccdnems01.cdnsrv.jio.com/jiosaavn.cdn.jio.com/972/d761345c77eda9b8113cee54e3416a4d_160.mp4",
             color: ["#718697","#F0AA96"],
@@ -205,7 +205,7 @@ function chillhop()
         {
             id: uuidv4(),
             name: " Çaarika ( feat FurKan ) ",
-            cover: "https://c.saavncdn.com/195/Afili-A-k-Original-Soundtrack-Vol-1-English-2020-20200407171309-500x500.jpg",
+            cover: "https://drive.google.com/uc?export=view&id=1mnKG3-n6vdy0ZObIGk67xUQkaoyunOxI",
             artist: " Aslı Demirer, Safa Hendem ",
             audio: "https://sgdccdnems01.cdnsrv.jio.com/jiosaavn.cdn.jio.com/195/4a4499e20a474732c3797127d7c17e0f_160.mp4",
             color: ["#f41e77","#27ffac"],
@@ -222,8 +222,8 @@ function chillhop()
         },
         {
             id: uuidv4(),
-            name: " Ayşe Ile Kerem ",
-            cover: "https://c.saavncdn.com/195/Afili-A-k-Original-Soundtrack-Vol-1-English-2020-20200407171309-500x500.jpg",
+            name: " Ayşe Ile Kerem ( feat Kerem )",
+            cover: "https://drive.google.com/uc?export=view&id=1E6QvljUC3MGsToiRl9LMLDKdBBgQBiyE ",
             artist: " Aslı Demirer, Safa Hendem ",
             audio: "https://sgdccdnems02.cdnsrv.jio.com/jiosaavn.cdn.jio.com/195/46257156868239849e44f907a7d9467e_160.mp4",
             color: ["#f41e5e","#00ff9d"],
@@ -232,7 +232,7 @@ function chillhop()
         {
             id: uuidv4(),
             name: " Bapbarap ",
-            cover: "https://c.saavncdn.com/195/Afili-A-k-Original-Soundtrack-Vol-1-English-2020-20200407171309-500x500.jpg",
+            cover: "https://drive.google.com/uc?export=view&id=1k5qu-tjlmNNzzwI4EYuAq2COB_RXRppl ",
             artist: " Aslı Demirer, Safa Hendem ",
             audio: "https://sdlhivkecdnems04.cdnsrv.jio.com/jiosaavn.cdn.jio.com/195/998f9a8b3948b21ef84eb879d1cfb463_160.mp4",
             color: ["#b4f41e","#5b02ff"],
@@ -241,7 +241,7 @@ function chillhop()
         {
             id: uuidv4(),
             name: " İnce İşler (feat Muhsin) ",
-            cover: "https://c.saavncdn.com/195/Afili-A-k-Original-Soundtrack-Vol-1-English-2020-20200407171309-500x500.jpg",
+            cover: "https://drive.google.com/uc?export=view&id=1enTjYrbRnHgKeCshtyqQq7t_K1u9FWBv",
             artist: " Aslı Demirer, Safa Hendem ",
             audio: "https://sgdccdnems01.cdnsrv.jio.com/jiosaavn.cdn.jio.com/195/7905e1166837bcf51dd4cf28b3904729_160.mp4",
             color: ["#5c21ff","#2e2a2a"],
@@ -331,7 +331,7 @@ function chillhop()
         {
             id: uuidv4(),
             name: " Enine Boyuna ( feat Raza) ",
-            cover: "https://c.saavncdn.com/195/Afili-A-k-Original-Soundtrack-Vol-1-English-2020-20200407171309-500x500.jpg",
+            cover: "https://drive.google.com/uc?export=view&id=17Wd-yGvzYsSmv3z3yjp3JZ_4yF5oq5sS",
             artist: " Aslı Demirer, Safa Hendem ",
             audio: "https://sklktcdnems01.cdnsrv.jio.com/jiosaavn.cdn.jio.com/195/d6c1503f7c52053c20c68876404094d6_160.mp4",
             color: ["#1ef442","#fd166f"],
